@@ -49,17 +49,6 @@ function submitContact(event) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    // Update active nav link based on current hash
-    const currentHash = window.location.hash || '#home';
-    
-    navLinks.forEach((link) => {
-        const href = link.getAttribute('href');
-        if (href === currentHash) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
 
     // Show intro overlay on first load
     const introOverlay = document.getElementById('introOverlay');
@@ -73,18 +62,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Update active nav link when hash changes
-window.addEventListener('hashchange', () => {
-    const currentHash = window.location.hash || '#home';
-    navLinks.forEach((link) => {
-        const href = link.getAttribute('href');
-        if (href === currentHash) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-});
 
 // Close mobile menu when clicking outside
 window.addEventListener('click', (event) => {
@@ -92,4 +69,24 @@ window.addEventListener('click', (event) => {
     if (mainNav?.classList.contains('open') && !target.closest('.main-nav') && !target.closest('.menu-toggle')) {
         mainNav.classList.remove('open');
     }
+});
+
+// Scroll Animations
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
 });
