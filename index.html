@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RICHMOTORS - Import, sales, and car rentals in Kigali, Rwanda. Trusted vehicles with transparent pricing." />
+    <title>RICHMOTORS - Import, Sales & Car Rentals in Kigali, Rwanda</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="introOverlay" class="intro-overlay">
+        <div class="intro-screen">
+            <div class="intro-logo">
+                <div class="intro-mark">M</div>
+                <div>
+                    <span class="intro-title">RICH MOTORS</span>
+                    <span class="intro-tagline">Smile Per Mile.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#home">
+                <span class="logo-mark">M</span>
+                <span>
+                    Rich Motors
+                    <span class="logo-tagline">Smile Per Mile.</span>
+                </span>
+            </a>
+            <button class="menu-toggle" aria-label="Open navigation">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Fleet</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="nav-cta" href="#contact">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">🇷🇼 Kigali's Trusted Auto Partner</span>
+                    <h1>Import, sell, and rent quality vehicles with confidence.</h1>
+                    <p>RICHMOTORS delivers verified Hyundai, Kia, Toyota, and more—with fast imports, competitive pricing in RWF, and expert service from Kicukiro.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#collection">Browse Fleet</a>
+                        <a class="btn btn-secondary" href="#contact">Get a Quote</a>
+                    </div>
+                    <div class="hero-highlights">
+                        <span class="highlight-pill">✓ Direct imports</span>
+                        <span class="highlight-pill">✓ Transparent pricing</span>
+                        <span class="highlight-pill">✓ Fast delivery</span>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <strong>250+</strong>
+                        <span>Quality vehicles</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>3,223</strong>
+                        <span>Trusted followers</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>4.9★</strong>
+                        <span>Customer rated</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLEET SECTION -->
+        <section id="collection" class="section collection-section">
+            <div class="container section-header">
+                <p class="eyebrow">Featured Inventory</p>
+                <h2>Our most popular vehicles this month.</h2>
+                <p>Hand-picked imports available for immediate sale and rental. All vehicles inspected and documented.</p>
+            </div>
+            <div class="container cards-grid">
+                <article class="car-card">
+                    <div class="card-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?auto=format&fit=crop&w=900&q=80" alt="Hyundai ix35 SUV" />
+                    <div class="card-content">
+                        <h3>Hyundai ix35</h3>
+                        <p>Reliable SUV for families and business. Fuel-efficient, spacious, and well-maintained.</p>
+                        <div class="card-specs">
+                            <span>🚗 SUV</span>
+                            <span>⚙️ Auto</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">18,900,000 RWF</span>
+                            <button onclick="buyCar('Hyundai ix35')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <div class="card-badge">Hot Deal</div>
+                    <img src="https://images.unsplash.com/photo-1591294776275-be5e8e0f3df4?auto=format&fit=crop&w=900&q=80" alt="Kia Sportage" />
+                    <div class="card-content">
+                        <h3>Kia Sportage</h3>
+                        <p>Modern SUV with latest tech features. Perfect for daily commute and weekend trips.</p>
+                        <div class="card-specs">
+                            <span>🚗 SUV</span>
+                            <span>⚙️ Auto</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">22,500,000 RWF</span>
+                            <button onclick="buyCar('Kia Sportage')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <div class="card-badge">New Stock</div>
+                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=900&q=80" alt="Toyota Harrier" />
+                    <div class="card-content">
+                        <h3>Toyota Harrier</h3>
+                        <p>Premium comfort meets reliability. Excellent resale value and service support.</p>
+                        <div class="card-specs">
+                            <span>🚗 Premium SUV</span>
+                            <span>⚙️ Auto</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">25,800,000 RWF</span>
+                            <button onclick="buyCar('Toyota Harrier')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1606664515524-2ddc54ae3e13?auto=format&fit=crop&w=900&q=80" alt="Kia Picanto" />
+                    <div class="card-content">
+                        <h3>Kia Picanto</h3>
+                        <p>Compact city car, affordable and economical. Ideal for individual and ride-share use.</p>
+                        <div class="card-specs">
+                            <span>🚗 Compact</span>
+                            <span>⚙️ Manual</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">8,950,000 RWF</span>
+                            <button onclick="buyCar('Kia Picanto')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1553505740-635601ac8e8b?auto=format&fit=crop&w=900&q=80" alt="Hyundai Elantra" />
+                    <div class="card-content">
+                        <h3>Hyundai Elantra</h3>
+                        <p>Elegant sedan for professionals. Smooth drive, reliable engine, great fuel economy.</p>
+                        <div class="card-specs">
+                            <span>🚗 Sedan</span>
+                            <span>⚙️ Auto</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">12,750,000 RWF</span>
+                            <button onclick="buyCar('Hyundai Elantra')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1591345572875-e1a819124a4a?auto=format&fit=crop&w=900&q=80" alt="Toyota Corolla" />
+                    <div class="card-content">
+                        <h3>Toyota Corolla</h3>
+                        <p>World's best-selling sedan. Legendary reliability and resale value guaranteed.</p>
+                        <div class="card-specs">
+                            <span>🚗 Sedan</span>
+                            <span>⚙️ Auto</span>
+                            <span>🇯🇵 Import</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="price">14,200,000 RWF</span>
+                            <button onclick="buyCar('Toyota Corolla')">Reserve</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="section services-section">
+            <div class="container section-header">
+                <p class="eyebrow">What We Offer</p>
+                <h2>Complete automotive solutions for every need.</h2>
+                <p>From direct vehicle imports to flexible rental plans, we handle everything.</p>
+            </div>
+            <div class="container service-grid">
+                <article class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Direct Import</h3>
+                    <p>We source verified vehicles from trusted suppliers, handle customs, and deliver ready-to-use cars to your door in Kigali.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Sales & Pricing</h3>
+                    <p>Transparent, competitive pricing in RWF. Finance options available. Trade-in support for upgrades.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">🔑</div>
+                    <h3>Rentals</h3>
+                    <p>Short-term and long-term rental options for families, businesses, and events. Insurance included.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container about-grid">
+                <div class="about-copy">
+                    <p class="eyebrow">Why RICHMOTORS</p>
+                    <h2>Your trusted automotive partner in Rwanda since day one.</h2>
+                    <p>We combine local expertise with global reach to deliver quality vehicles at fair prices. Every car is inspected, documented, and backed by our guarantee.</p>
+                    <ul class="feature-list">
+                        <li>✓ Verified import sourcing from trusted suppliers</li>
+                        <li>✓ Transparent pricing—no hidden fees</li>
+                        <li>✓ Full documentation and warranty support</li>
+                        <li>✓ Fast delivery to Kigali and nationwide</li>
+                    </ul>
+                </div>
+                <div class="about-cards">
+                    <div class="feature-card">
+                        <h3>🌍 Global Network</h3>
+                        <p>Access to international markets and auction partners ensures quality inventory.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📱 Easy Process</h3>
+                        <p>Browse, reserve, and complete paperwork online. Fast, transparent, hassle-free.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>👥 Local Team</h3>
+                        <p>Kicukiro-based team provides personalized service and after-sales support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM SECTION -->
+        <section class="section instagram-section">
+            <div class="container section-header">
+                <p class="eyebrow">Live Updates</p>
+                <h2>Latest arrivals from our Instagram feed.</h2>
+                <p>Follow @the_richmotors for daily inventory updates, special offers, and customer stories.</p>
+            </div>
+            <div class="container insta-grid">
+                <article class="insta-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?auto=format&fit=crop&w=900&q=80" alt="Latest Hyundai models" />
+                    <p class="insta-tag">@the_richmotors</p>
+                    <h3>Latest Hyundai & Kia Arrivals</h3>
+                    <p>Fresh stock of popular models. Check our Instagram for photos, specs, and instant booking.</p>
+                    <a href="https://www.instagram.com/the_richmotors" target="_blank" class="insta-link">View on Instagram →</a>
+                </article>
+                <article class="insta-card">
+                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=900&q=80" alt="Toyota premium collection" />
+                    <p class="insta-tag">@the_richmotors</p>
+                    <h3>Toyota Premium Collection</h3>
+                    <p>Harrier, Corolla, and more. Trusted quality with full service history included.</p>
+                    <a href="https://www.instagram.com/the_richmotors" target="_blank" class="insta-link">View on Instagram →</a>
+                </article>
+                <article class="insta-card">
+                    <img src="https://images.unsplash.com/photo-1606664515524-2ddc54ae3e13?auto=format&fit=crop&w=900&q=80" alt="Affordable compact cars" />
+                    <p class="insta-tag">@the_richmotors</p>
+                    <h3>Budget-Friendly Options</h3>
+                    <p>Kia Picanto, Hyundai i10 range. Perfect for first-time buyers and city commuting.</p>
+                    <a href="https://www.instagram.com/the_richmotors" target="_blank" class="insta-link">View on Instagram →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-grid">
+                <div class="contact-intro">
+                    <p class="eyebrow">Ready to get started?</p>
+                    <h2>Contact RICHMOTORS today for a no-pressure consultation.</h2>
+                    <p>Whether buying, renting, or importing—our team is here to help. Fast response, expert advice.</p>
+                    <div class="contact-info">
+                        <p><strong>📞 Phone:</strong> 0788 261 067</p>
+                        <p><strong>📧 Email:</strong> info@richmotors.com</p>
+                        <p><strong>📍 Showroom:</strong> Kicukiro-Centre, Close to Come Again</p>
+                        <p><strong>⏰ Hours:</strong> Mon–Sat 8:00 AM–6:00 PM</p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="submitContact(event)">
+                    <label>
+                        Full Name
+                        <input type="text" name="name" placeholder="Your name" required />
+                    </label>
+                    <label>
+                        Email Address
+                        <input type="email" name="email" placeholder="you@example.com" required />
+                    </label>
+                    <label>
+                        I'm interested in...
+                        <select name="service" required>
+                            <option value="">Select an option</option>
+                            <option value="buy">Buying a vehicle</option>
+                            <option value="rent">Renting a car</option>
+                            <option value="import">Importing a vehicle</option>
+                        </select>
+                    </label>
+                    <label>
+                        Vehicle Preference
+                        <input type="text" name="interest" placeholder="e.g., Toyota, SUV, Sedan, Budget" />
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message" rows="4" placeholder="Any questions or details?"></textarea>
+                    </label>
+                    <button class="btn btn-primary" type="submit">Send Inquiry</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-section">
+                <h3>RICHMOTORS</h3>
+                <p>Import, sales, and rentals serving Kigali since 2015.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Fleet</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p><a href="https://www.instagram.com/the_richmotors" target="_blank" class="social-link">📱 Instagram: @the_richmotors</a></p>
+                <p><a href="https://maps.app.goo.gl/NDxoQRNzeqKCubPs7" target="_blank" class="social-link">📍 Find us on Google Maps</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 RICHMOTORS Ltd. All rights reserved. Trusted by 3,223+ customers across Rwanda.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
